@@ -22,7 +22,7 @@ $para-font: 1.5rem;
         letter-spacing: .3rem;
     } */
     h2 {
-        font-size: $subtitle-font;
+        font-size: $large-font;
         text-align: center;
         padding: 1rem;
         font-family: 'Permanent Marker', cursive;
@@ -35,8 +35,9 @@ $para-font: 1.5rem;
 }
 
 @media screen and (max-width: 932px) {
-    .home h1,
     .home h2 {
-        color: white;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        font-size: $large-font;
     }
 }

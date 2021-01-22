@@ -22,9 +22,9 @@ ul {
   list-style: none;
 }
 
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1095px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
 
@@ -58,7 +58,7 @@ ul {
 }
 
 .home h2 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   text-align: center;
   padding: 1rem;
   font-family: 'Permanent Marker', cursive;
@@ -71,9 +71,10 @@ ul {
 }
 
 @media screen and (max-width: 932px) {
-  .home h1,
   .home h2 {
     color: white;
+    text-shadow: 2px 2px black;
+    font-size: 4.5rem;
   }
 }
 
@@ -105,8 +106,6 @@ ul {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
   z-index: 4;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .main-head .logo {
@@ -181,9 +180,11 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   nav li a {
-    font-size: rem;
+    font-size: 2rem;
   }
   #logo {
     -webkit-box-align: center;
@@ -254,6 +255,13 @@ ul {
 
 .reviews .sales-image-two {
   width: 75%;
+}
+
+@media screen and (max-width: 932px) {
+  .reviews p {
+    color: black;
+    text-shadow: 2px 2px white;
+  }
 }
 
 .contact {
