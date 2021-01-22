@@ -11,8 +11,9 @@ $para-font: 1.5rem;
     text-align: center;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
-    .sales-container {
+    background: url(tour55.jpg);
+    font-family: 'Permanent Marker', cursive;
+    .reviews {
         display: grid;
         grid-template-columns: 40% 40%;
         grid-template-rows: auto;
@@ -29,6 +30,8 @@ $para-font: 1.5rem;
         color: white;
         padding: 1rem;
         margin: 1rem;
+        font-size: $subtitle-font;
+        text-shadow: 2px 2px black;
     }
     .sales-image-one {
         width: 65%;

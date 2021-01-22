@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -21,6 +22,12 @@ ul {
   list-style: none;
 }
 
+@media screen and (max-width: 932px) {
+  html {
+    font-size: 55%;
+  }
+}
+
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,59 +36,49 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   margin: auto;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 252, 252, 0.8)), to(transparent)), url(tour3.jpg);
-  background: linear-gradient(rgba(252, 252, 252, 0.8), transparent), url(tour3.jpg);
+  background: url(tour3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-}
-
-.home h1 {
-  font-size: 4.5rem;
-  text-align: center;
-  margin: auto;
-  padding-top: 2%;
-  font-family: 'Permanent Marker', cursive;
-  letter-spacing: .3rem;
+  min-height: 90vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* h1 {
+        font-size: $large-font;
+        text-align: center;
+        padding-top: 2%;
+        font-family: 'Permanent Marker', cursive;
+        letter-spacing: .3rem;
+    } */
 }
 
 .home h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin: auto;
   padding: 1rem;
   font-family: 'Permanent Marker', cursive;
+  text-shadow: 2px 2px #4fa4fad2;
 }
 
-.home .map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: auto;
-  top: 10%;
+.home .home h1,
+.home .home h2 {
+  margin-bottom: 1rem;
 }
 
-.home #map {
-  width: 75vw;
-  height: 70vh;
+@media screen and (max-width: 932px) {
+  .home h1,
+  .home h2 {
+    color: white;
+  }
 }
 
 .main-head {
-  background: #838485;
+  background: #4fa4fae3;
   color: white;
   position: -webkit-sticky;
   position: sticky;
@@ -130,7 +127,7 @@ ul {
           flex: 1 1 40rem;
   color: white;
   font-size: 3.5rem;
-  text-shadow: 3px 3px rgba(248, 139, 50, 0.678);
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.678);
   padding: .5rem;
   margin-left: 3%;
   cursor: pointer;
@@ -177,6 +174,29 @@ ul {
   color: white;
 }
 
+@media screen and (max-width: 932px) {
+  nav {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  nav li a {
+    font-size: rem;
+  }
+  #logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: none;
+  }
+}
+
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,11 +214,11 @@ ul {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(transparent));
-  background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+  background: url(tour55.jpg);
+  font-family: 'Permanent Marker', cursive;
 }
 
-.reviews .sales-container {
+.reviews .reviews {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 40%;
@@ -224,6 +244,8 @@ ul {
   color: white;
   padding: 1rem;
   margin: 1rem;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px black;
 }
 
 .reviews .sales-image-one {
@@ -250,57 +272,89 @@ ul {
           align-items: center;
   margin: auto;
   background: #333333;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
 .contact h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
-  font-size: 2.5rem;
-}
-
-.contact p {
-  margin-top: 4rem;
-  color: white;
-  font-size: 1.5rem;
-}
-
-.contact form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  font-family: 'Permanent marker', cursive;
+}
+
+.contact p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
-  height: 30%;
-  padding: 2rem;
-}
-
-.contact label {
+  margin-top: 4rem;
+  color: white;
   font-size: 2.5rem;
 }
 
-.contact input,
-.contact label,
-.contact button {
-  width: auto;
-  font-size: 1.5rem;
-  background-color: #535353;
-  cursor: pointer;
+.contact .form-wrapper {
+  width: 60%;
   color: white;
-  padding: 1rem;
-  border: 1px solid white;
 }
 
-.contact button:hover {
-  background-color: white;
-  color: black;
+.contact .form-head {
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact .email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.contact .form-wrapper button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 4px solid #d3d2d2;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact .form-wrapper input {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+.contact .form-wrapper button:hover {
+  background-color: black;
+  color: white;
 }
 
 .contact .socials {
@@ -312,7 +366,7 @@ ul {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  width: 50%;
+  width: 80%;
   float: right;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -320,6 +374,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact img {
+  width: 25%;
 }
 
 .contact .social-image {
@@ -336,6 +394,164 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15%;
+  width: 70%;
+}
+
+.feed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+  background: url(tour42.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.feed h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .3rem;
+  color: white;
+}
+
+.feed h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.feed .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  top: 10%;
+}
+
+.feed #map {
+  width: 75vw;
+  height: 70vh;
+}
+
+.sug-tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+  background: url(tour44.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.sug-tours h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .3rem;
+  color: white;
+}
+
+.sug-tours h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.sug-tours .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  top: 10%;
+}
+
+.sug-tours #map {
+  width: 75vw;
+  height: 70vh;
+}
+
+.insta {
+  min-width: 90vw;
+  min-height: 100vh;
+  margin: auto;
+  color: black;
+  background: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.insta img {
+  width: 25%;
+  overflow: hidden;
+}
+
+.insta h1 {
+  font-size: 3.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: 'Permanent Marker';
+}
+
+@media screen and (max-width: 932px) {
+  .instafeed-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
+  }
+  img {
+    min-width: 90%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

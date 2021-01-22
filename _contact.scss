@@ -10,57 +10,78 @@ $para-font: 1.5rem;
     align-items: center;
     margin: auto;
     background: #333333;
-    min-height: 90vh;
+    min-height: 80vh;
     h3 {
         align-items: center;
-        color: white;
-        font-size: $subtitle-font;
-    }
-    p {
-        margin-top: 4rem;
-        color: white;
-        font-size: $para-font;
-    }
-    form {
-        display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        height: 30%;
-        padding: 2rem;
+        text-align: center;
+        color: white;
+        font-size: $title-font;
+        margin-top: 3rem;
+        font-family: 'Permanent marker', cursive;
     }
-    label {
+    p {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 4rem;
+        color: white;
         font-size: $subtitle-font;
     }
-    input,
-    label,
-    button {
-        width: auto;
-        font-size: $para-font;
-        background-color: rgb(83, 83, 83);
-        cursor: pointer;
+    .form-wrapper {
+        width: 60%;
         color: white;
-        padding: 1rem;
-        border: 1px solid white;
     }
-    button:hover {
-        background-color: white;
-        color: black;
+    .form-head {
+        text-align: center;
+        padding: 2rem;
+    }
+    .email-form {
+        display: flex;
+        padding: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-wrapper button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        border: 4px solid rgb(211, 210, 210);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .form-wrapper input {
+        padding: 1rem 3rem;
+        font-size: $para-font;
+    }
+    .form-wrapper button:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .socials {
         display: flex;
         flex-direction: row;
         position: relative;
-        width: 50%;
+        width: 80%;
         float: right;
         align-items: center;
         justify-content: center;
+    }
+    img {
+        width: 25%;
     }
     .social-image {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 15%;
+        width: 70%;
     }
 }
