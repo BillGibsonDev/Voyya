@@ -1,0 +1,39 @@
+$primary: #838485;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+    .sales-container {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        grid-gap: 1rem;
+    }
+    h3 {
+        color: white;
+    }
+    p {
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .sales-image-one {
+        width: 65%;
+    }
+    .sales-image-two {
+        width: 75%;
+    }
+}

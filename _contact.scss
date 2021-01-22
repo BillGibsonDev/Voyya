@@ -1,0 +1,66 @@
+$primary: #838485;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #333333;
+    min-height: 90vh;
+    h3 {
+        align-items: center;
+        color: white;
+        font-size: $subtitle-font;
+    }
+    p {
+        margin-top: 4rem;
+        color: white;
+        font-size: $para-font;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        padding: 2rem;
+    }
+    label {
+        font-size: $subtitle-font;
+    }
+    input,
+    label,
+    button {
+        width: auto;
+        font-size: $para-font;
+        background-color: rgb(83, 83, 83);
+        cursor: pointer;
+        color: white;
+        padding: 1rem;
+        border: 1px solid white;
+    }
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 50%;
+        float: right;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    }
+}

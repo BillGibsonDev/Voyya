@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 90vw;
+  margin: auto;
+  padding: 0;
+  font-family: 'Oxygen', sans-serif;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(252, 252, 252, 0.8)), to(transparent)), url(tour3.jpg);
+  background: linear-gradient(rgba(252, 252, 252, 0.8), transparent), url(tour3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.home h1 {
+  font-size: 4.5rem;
+  text-align: center;
+  margin: auto;
+  padding-top: 2%;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .3rem;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.home .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  top: 10%;
+}
+
+.home #map {
+  width: 75vw;
+  height: 70vh;
+}
+
+.main-head {
+  background: #838485;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+.main-head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  z-index: 4;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.main-head #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 3px 3px rgba(248, 139, 50, 0.678);
+  padding: .5rem;
+  margin-left: 3%;
+  cursor: pointer;
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: .5rem;
+}
+
+.main-head #logo:hover {
+  color: white;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: right;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.main-head nav li a:hover {
+  color: white;
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(transparent));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), transparent);
+}
+
+.reviews .sales-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  grid-gap: 1rem;
+}
+
+.reviews h3 {
+  color: white;
+}
+
+.reviews p {
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.reviews .sales-image-one {
+  width: 65%;
+}
+
+.reviews .sales-image-two {
+  width: 75%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background: #333333;
+  min-height: 90vh;
+}
+
+.contact h3 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.contact p {
+  margin-top: 4rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 30%;
+  padding: 2rem;
+}
+
+.contact label {
+  font-size: 2.5rem;
+}
+
+.contact input,
+.contact label,
+.contact button {
+  width: auto;
+  font-size: 1.5rem;
+  background-color: #535353;
+  cursor: pointer;
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.contact button:hover {
+  background-color: white;
+  color: black;
+}
+
+.contact .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 50%;
+  float: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 15%;
+}
+/*# sourceMappingURL=styles.css.map */

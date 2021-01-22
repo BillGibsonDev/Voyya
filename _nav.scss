@@ -1,0 +1,64 @@
+$primary: #838485;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$subtitle-font: 2.5rem;
+$nav-font: 1.5rem;
+.main-head {
+    background: $primary;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    min-height: 5vh;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    nav {
+        display: flex;
+        padding: 0;
+        margin: auto;
+        align-items: center;
+        flex: 1 1 40rem;
+        z-index: 4;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: flex;
+        flex: 1 1 40rem;
+    }
+    #logo {
+        display: flex;
+        flex: 1 1 40rem;
+        color: rgb(255, 255, 255);
+        font-size: $title-font;
+        text-shadow: 3px 3px rgba(248, 139, 50, 0.678);
+        padding: .5rem;
+        margin-left: 3%;
+        cursor: pointer;
+        font-family: 'Permanent Marker', cursive;
+        letter-spacing: .5rem;
+    }
+    #logo:hover {
+        color: white;
+    }
+    nav ul {
+        display: flex;
+        flex: 1 1 40rem;
+        list-style: none;
+        align-items: center;
+        float: right;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    nav li a {
+        display: flex;
+        flex: 1 1 40rem;
+        font-size: $nav-font;
+        color: black;
+        padding: 1rem;
+        font-family: 'Permanent Marker', cursive;
+    }
+    nav li a:hover {
+        color: rgb(255, 255, 255);
+    }
+}
