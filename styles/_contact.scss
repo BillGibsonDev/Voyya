@@ -1,0 +1,87 @@
+$primary: #838485;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #333333;
+    min-height: 80vh;
+    h3 {
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: $title-font;
+        margin-top: 3rem;
+        font-family: 'Permanent marker', cursive;
+    }
+    p {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 4rem;
+        color: white;
+        font-size: $subtitle-font;
+    }
+    .form-wrapper {
+        width: 60%;
+        color: white;
+    }
+    .form-head {
+        text-align: center;
+        padding: 2rem;
+    }
+    .email-form {
+        display: flex;
+        padding: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .form-wrapper button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 1rem;
+        border: 4px solid rgb(211, 210, 210);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .form-wrapper input {
+        padding: 1rem 3rem;
+        font-size: $para-font;
+    }
+    .form-wrapper button:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+    .socials {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: 80%;
+        float: right;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        width: 25%;
+    }
+    .social-image {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
+}

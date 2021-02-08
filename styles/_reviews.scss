@@ -1,0 +1,49 @@
+$primary: #838485;
+$large-font: 4.5rem;
+$title-font: 3.5rem;
+$subtitle-font: 2.5rem;
+$para-font: 1.5rem;
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background: url(tour55.jpg);
+    font-family: 'Permanent Marker', cursive;
+    .reviews {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        grid-gap: 1rem;
+    }
+    h3 {
+        color: white;
+    }
+    p {
+        color: white;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: $subtitle-font;
+        text-shadow: 2px 2px black;
+    }
+    .sales-image-one {
+        width: 65%;
+    }
+    .sales-image-two {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 932px) {
+    .reviews p {
+        color: black;
+        text-shadow: 2px 2px rgb(255, 255, 255);
+    }
+}

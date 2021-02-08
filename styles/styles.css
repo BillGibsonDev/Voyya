@@ -41,7 +41,7 @@ ul {
           align-items: center;
   width: 100%;
   margin: auto;
-  background: url(tour3.jpg);
+  background: url(/images/tour3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 90vh;
