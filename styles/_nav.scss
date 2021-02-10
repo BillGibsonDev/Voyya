@@ -24,6 +24,9 @@ $nav-font: 1.5rem;
     .logo {
         display: flex;
         flex: 1 1 40rem;
+        &:hover {
+            filter: opacity(.8);
+        }
     }
     #logo {
         display: flex;
@@ -36,9 +39,6 @@ $nav-font: 1.5rem;
         cursor: pointer;
         font-family: 'Permanent Marker', cursive;
         letter-spacing: .5rem;
-    }
-    #logo:hover {
-        color: white;
     }
     nav ul {
         display: flex;
@@ -56,26 +56,25 @@ $nav-font: 1.5rem;
         color: black;
         padding: 1rem;
         font-family: 'Permanent Marker', cursive;
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
     }
-    nav li a:hover {
-        color: rgb(255, 255, 255);
-    }
-}
-
-@media screen and (max-width: 932px) {
-    nav {
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        flex-wrap: wrap;
-    }
-    nav li a {
-        font-size: 2rem;
-    }
-    #logo {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin-left: none;
+    @media screen and (max-width: 932px) {
+        nav {
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        nav li a {
+            font-size: 2rem;
+        }
+        #logo {
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-left: none;
+        }
     }
 }

@@ -15,6 +15,9 @@ $para-font: 1.5rem;
     img {
         width: 25%;
         overflow: hidden;
+        &:hover {
+            filter: opacity(.6);
+        }
     }
     h1 {
         font-size: $title-font;

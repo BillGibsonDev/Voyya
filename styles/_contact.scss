@@ -83,5 +83,8 @@ $para-font: 1.5rem;
         align-items: center;
         justify-content: center;
         width: 70%;
+        &:hover {
+            filter: opacity(.5);
+        }
     }
 }

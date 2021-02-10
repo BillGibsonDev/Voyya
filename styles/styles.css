@@ -117,6 +117,11 @@ ul {
           flex: 1 1 40rem;
 }
 
+.main-head .logo:hover {
+  -webkit-filter: opacity(0.8);
+          filter: opacity(0.8);
+}
+
 .main-head #logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,10 +137,6 @@ ul {
   cursor: pointer;
   font-family: 'Permanent Marker', cursive;
   letter-spacing: .5rem;
-}
-
-.main-head #logo:hover {
-  color: white;
 }
 
 .main-head nav ul {
@@ -174,7 +175,7 @@ ul {
 }
 
 @media screen and (max-width: 932px) {
-  nav {
+  .main-head nav {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -183,10 +184,10 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  nav li a {
+  .main-head nav li a {
     font-size: 2rem;
   }
-  #logo {
+  .main-head #logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -215,7 +216,7 @@ ul {
   text-align: center;
   width: 100%;
   min-height: 100vh;
-  background: url(tour55.jpg);
+  background: url(/images/tour55.jpg);
   font-family: 'Permanent Marker', cursive;
 }
 
@@ -405,6 +406,11 @@ ul {
   width: 70%;
 }
 
+.contact .social-image:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
 .feed {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,7 +487,7 @@ ul {
           align-items: center;
   width: 100%;
   margin: auto;
-  background: url(tour44.jpg);
+  background: url(/images/tour44.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -542,6 +548,11 @@ ul {
 .insta img {
   width: 25%;
   overflow: hidden;
+}
+
+.insta img:hover {
+  -webkit-filter: opacity(0.6);
+          filter: opacity(0.6);
 }
 
 .insta h1 {
